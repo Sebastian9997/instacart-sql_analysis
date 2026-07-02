@@ -1,0 +1,37 @@
+# Local OS files
+.DS_Store
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw/source data kept outside Git
+data/raw/
+*.csv
+*.tsv
+*.parquet
+*.jsonl
+
+# Local database files
+*.duckdb
+*.duckdb.wal
+*.db
+*.sqlite
+*.sqlite3
+
+# Local environment/config files
+.env
+.env.*
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
