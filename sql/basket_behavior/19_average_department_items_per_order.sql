@@ -10,7 +10,7 @@ WITH basket_by_department AS (
 )
 SELECT
 department_name,
-ROUND(AVG(product_count), 2) as avg_basket_size
+ROUND(AVG(product_count), 2) AS avg_department_items_per_order
 FROM basket_by_department
 GROUP BY department_name
-ORDER BY avg_basket_size DESC;
+ORDER BY avg_department_items_per_order DESC;

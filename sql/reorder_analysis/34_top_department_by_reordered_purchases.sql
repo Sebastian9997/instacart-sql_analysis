@@ -5,10 +5,10 @@ WITH reordered_products AS (
 )
 SELECT
 d.department as department,
-COUNT(rp.product_id) as product_count
+COUNT(rp.product_id) AS reordered_purchase_count
 FROM reordered_products rp
 LEFT JOIN products p ON rp.product_id = p.product_id
 LEFT JOIN departments d ON p.department_id = d.department_id
 GROUP BY d.department
-ORDER BY product_count DESC
+ORDER BY reordered_purchase_count DESC
 LIMIT 1;
